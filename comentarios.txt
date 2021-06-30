@@ -1,0 +1,34 @@
+#######################################################################################
+Capítulo 1: Configuração Ambientes
+
+Comando PowerShell:
+    - cd (alterar um diretório)
+    - cd .. (alterar um diretório)
+    - ls (liste arquivos em seu diretório atual no Mac)
+    - dir (liste arquivos em seu diretório atual no Windows)
+    - pwd (diretório de trabalho de impressão)
+    - mkdir (fazer diretório)
+    - touch (criar um novo arquivo no Mac)
+    - echo (criar um novo arquivo no Windows)
+########################################################################################
+Capítulo 2: Aplicativo Hello World
+
+1° Passo: python -m venv hello.
+2° Passo: .\hello\Scripts\Activate.ps1
+3° Passo: pip install django
+4° Passo: django-admin startproject config .
+5° Passo: python manage.py runserver
+6° Passo: python manage.py migrate
+7° Passo: python manage.py startapp pages
+8° Passo: python manage.py test
+
+Vamos rever o que cada novo arquivo de aplicativo faz: pages (python manage.py startapp pages)
+    - admin.py: é um arquivo de configuração para o aplicativo Admin Django embutido
+    - apps.py: é um arquivo de configuração para o próprio aplicativo
+    - migrations/: mantém o controle de quaisquer alterações em nosso arquivo para que nosso banco de dados e fique em sincroniamodels.pymodels.py
+    - models.py: é onde definimos nossos modelos de banco de dados que Django traduz automaticamente em tabelas de banco de dados
+    - tests.py: é para nossos testes específicos de aplicativos
+    - views.py: é onde lidamos com a lógica de solicitação/resposta para o nosso aplicativo web
+
+O fluxo completo se parece com isso:
+    - URL -> View -> Model -> Template
