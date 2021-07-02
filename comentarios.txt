@@ -32,3 +32,5 @@ Vamos rever o que cada novo arquivo de aplicativo faz: pages (python manage.py s
 
 O fluxo completo se parece com isso:
     - URL -> View -> Model -> Template
+
+########################################################################################
