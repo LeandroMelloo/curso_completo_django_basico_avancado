@@ -34,3 +34,13 @@ O fluxo completo se parece com isso:
     - URL -> View -> Model -> Template
 
 ########################################################################################
+Curso Django do livro django.pdf 
+
+1° Passo: criar uma pasta django
+2° Passo: python -m venv venv.
+3° Passo: .\venv\Scripts\Activate.ps1
+4° Passo: pip install django
+5° Passo: django-admin startproject config .
+6° Passo: python manage.py migrate
+7° Passo: python manage.py runserver / python manage.py runserver 8080 => se quiser mudar a porta do servidor, passe-a como argumento de linha de comando / python manage.py runserver 0.0.0.0:8080 => se quiser mudar o IP do servidor, passe-o junto com a porta
+8° Passo: python manage.py startapp myapp => comando para criar um aplicativo, observação é preciso inserir este aplicativo no settings.py -> INSTALLED_APPS = [..., 'cliente']
